@@ -3,14 +3,17 @@ import React from 'react';
 const User = (props) => {
     const familiar = props.familiar;
     let greetings;
-    if(familiar){
-        greetings = <p>Welcome, my friend.</p>
 
+    if(familiar){
+        greetings = <p>Welcome, my friend</p>
     }
     else{
-        greetings =  <p>Who the hell are you?</p>
-
+        greetings = <p>Who the hell are you?</p>
     }
+    //JavaScript ternary operator
+    // let food = familiar ? <p>I will buy food for you.</p>
+    //                 :food = <p>Lets eat his his whose whose?</p>
+
     return (
         <div>
             <div>
@@ -19,8 +22,12 @@ const User = (props) => {
             </div>
             <div>
                 <h2>Food</h2>
-                <p>I will buy food for you.</p>
-                <p>Lets eat his his whose whose?</p>
+               
+                {
+                    familiar ? <p>I will buy food for you.</p> : <p>Sorry i am broke.</p>
+                }
+
+
 
             </div>
 
