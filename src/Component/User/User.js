@@ -26,11 +26,18 @@ const User = (props) => {
                 {
                     familiar ? <p>I will buy food for you.</p> : <p>Sorry i am broke.</p>
                 }
+            </div>
+            <div>
+                <h2>Connection</h2>
+                {
+                    familiar && <p>Let's connect through facebook</p>
+                }
 
+                {/* <p>Let's connect through facebook</p>
+                <p>I don't add stranger</p> */}
 
 
             </div>
-
         </div>
     );
 };
